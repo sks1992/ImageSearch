@@ -2,6 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-parcelize'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
 
 android {
     compileSdkVersion 30
@@ -59,4 +61,18 @@ dependencies {
     def retrofit_Version = "2.9.0"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_Version"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_Version"
+
+    //Dagger Hilt dependencies
+    def hiltVersion = '2.28.3-alpha'
+    def hiltAndroidXVersion = '1.0.0-alpha02'
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hiltAndroidXVersion"
+    kapt "androidx.hilt:hilt-compiler:$hiltAndroidXVersion"
+
+
+    //Paging dependencies
+    def paging_version = "3.0.0"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+
 }
