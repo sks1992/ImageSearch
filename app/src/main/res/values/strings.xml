@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ImageSearch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="retry">Retry</string>
+    <string name="result_could_not_be_loaded">Result Could Not Be Loaded</string>
+    <string name="no_result_found_for_this_query">No Result Found For This Query</string>
 </resources>

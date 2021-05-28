@@ -1,7 +1,8 @@
-package sandeep.kumar.imagesearch
+package sandeep.kumar.imagesearch.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import sandeep.kumar.imagesearch.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
